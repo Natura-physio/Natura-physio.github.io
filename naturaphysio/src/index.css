@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/*************************
+Page d'accueil
+*************************/
+.imagePrincipale {
+  background-color: #20596B;
+}
+.imagePrincipale img {
+  width: 100%;
+}
+
+.imgBarre {
+  background-color: #20596B;
+  padding: 20px;
+  /* box-shadow: 1px 3px 5px rgb(219, 7, 7); */
+}
+
+.imgBarre .row.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.imgBarre .adresse img, .imgBarre .heuresOuvertures img {
+  height: 30px;
+}
+
+.imgBarre p {
+  text-align: left;
+  margin-left: 15px;
+  color: white;
+  font-size: 12px;
+  margin-top: 0px;
+}
+
+.imgBarre .row.icons .col .adresse, .imgBarre .row.icons .col .heuresOuvertures {
+  /* , .imgBarre .row.icons .col .phone_mail  */
+  display: flex;
+  
+}
+
+.imgBarre .row.icons .phone, .imgBarre .row.icons .mail {
+  /* , .imgBarre .row.icons .col .phone_mail  */
+  display: flex;
+}
+
+.imgBarre .row.icons .phone {
+  margin-top: 2px;
+}
+.imgBarre .phone_mail img {
+  height: 20px;
+}
+
+.titre-sur-image {
+  position: absolute;
+  right: 30px;
+  left: 80%;
+  bottom: 13%;
+  text-align: right;
+  color: #20596B;
+}
+
+h1 {
+  font-weight: 300px;
+  font-size: 20px;
+}
+
+h3 {
+  /* font-family: 'Inter'; */
+  font-weight: 300;
+  font-size: 40px;
+  margin: 5px;
+}
+
+/* Section de merites et d'accomplissements de la physio */
+.iconSection {
+  background-color: #FAFAF5;
+}
+
+.iconSection .row.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+
+.iconSection .row.icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.iconSection .col {
+  width: 400px;
+}
+
+.iconSection {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.iconSection p {
+  color: #20596B;
+}
+
+.iconSection .col img {
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+
+.iconSection .row.description {
+  text-align: center;
+}
+
+/* Section d'information supplementaire */
+.extraInfoClasse {
+  background-color: #20596B;
+}
+
+
+.extraInfoContainer .col.image {
+  padding: 30px 80px;
+}
+.extraInfoContainer .col img{
+  color: white;
+  width: 400px;
+}
+
+.extraInfoContainer .col.extraInfo {
+  padding: 30px 80px 30px 0px;
+  text-align: left;
+}
+
+
+.extraInfoContainer .col .row p{
+  /* display: table-cell; */
+  /* padding: 10px 60px 30px 30px; */
+  color: white;
+  text-align: left;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.extraInfoContainer {
+  /* display: table-cell; */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*******************
+Bouton
+*******************/
+button {
+  border: none;
+  padding: 10px 25px;
+  border-radius: 15px;
+  font-family: 'Inter';
+  font-size: 13px;
+  font-weight: 450;
+}
+
+/* Bouton de couleur bleu */
+button.btn {
+  background-color: #20596B;
+  color: white;
+}
+
+/* Bouton de couleur blanche */
+button.btn.white {
+  background-color: white;
+  color: #20596B;
+  font-weight: bold;
+}
+
+/* Hover du bouton */
+button.btn:hover {
+  background-color: #0b7c9f;
+  color: white;
+  cursor: pointer;
+}
+
+/* Types de services pour les patients */
+.typeServicesClasse {
+  padding: 20px 40px;
+  /* font-family: "Inter"; */
+  /* margin: 20px; */
+  background-color: #FAFAF5;
+  color: #20596B;
+  /* max-width: 800px; */
+}
+
+
+.typeServices {
+  
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-between;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+
+.typeServices .typeServicesCartes {
+  display: table-cell;
+  width: 40%;
+  max-width: 450px;
+  background-color: white;
+  padding: 20px 40px;
+  box-shadow: 1px 2px 2px #6a6a6a70;
+  /* border-radius: 5px; */
+  text-align: left;
+}
+
+
+.typeServices .typeServicesCartes .typeServices-titre {
+  text-align: left;
+}
+
+.typeServices .typeServicesCartes .typeServices-body {
+  height: 70px;
+  font-size: 14px;
+  
+}
+
+
+/*************************
+Barre de navigation
+**************************/
+.navbar {
+  background-color: #12718F;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color:beige;
+  text-decoration: underline;
+}
+
+/* Image du logo dans barre de navigation */
+.navbar img {
+  height: 60px;
+  padding: 10px;
+}
+
+.navLinks a {
+  margin: 20px;
+}
+
+/* Donne de l'espace entre le lien pour changer la langue et 
+le cote de la page */
+.navLinks:last-child {
+  margin-right: 20px;
+}
+
+/****************************
+ Pied de page 
+ ****************************/
+footer {
+  background-color: rgba(18, 115, 145, 0.68);
+  display: flex;
+  padding: 20px 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+/* Ligne droite blanche qui sert de separateur */
+hr {
+  
+  height: 2px;
+  
+  color: white;
+  border: none;
+  background-color: white;
+}
+
+hr.gauche {
+  width: 100%;
+  margin-left: 0px;
+}
+
+hr.droite {
+  width: 70%;
+  margin-right: 0px;
+}
+
+footer .col.gauche, footer .col.droite {
+  width: 300px;
+}
+
+/* Mets les images sur la meme ligne que les descriptions */
+.col.gauche .adresse, .col.gauche  .phone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.gauche .adresse img, .gauche .phone img {
+  width: 20px;
+}
+
+.gauche p {
+  color: white;
+  font-size: 12px;
+  
+  margin: 0px;
+  margin-left: 10px;
+}
+
+
+.gauche img.naturaPhysio {
+  height: 40px;
+}
+
+.centre {
+  display: flex;
+  
+  flex-direction: column;
+  align-items: center;
+}
+.centre a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.droite .heuresOuvertures p {
+  text-align: right;
+  color: white;
+  font-size: 12px;
+}
+
+.droite .mediasSociaux {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.droite .mediasSociaux img {
+  width: 20px;
+  padding-left: 10px;
+}
