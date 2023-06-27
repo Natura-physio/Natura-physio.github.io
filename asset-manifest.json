@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6471ce5f.css",
+    "main.js": "/static/js/main.0390c585.js",
+    "static/js/787.0902785e.chunk.js": "/static/js/787.0902785e.chunk.js",
+    "static/media/imagePrincipale.png": "/static/media/imagePrincipale.c5f016393222611f9e75.png",
+    "static/media/image5.png": "/static/media/image5.b4b13987e896108bfb38.png",
+    "static/media/logo.png": "/static/media/logo.2963006e244892580752.png",
+    "static/media/natura_physio_noir.png": "/static/media/natura_physio_noir.2c094a2b660bd88aba34.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.6471ce5f.css.map": "/static/css/main.6471ce5f.css.map",
+    "main.0390c585.js.map": "/static/js/main.0390c585.js.map",
+    "787.0902785e.chunk.js.map": "/static/js/787.0902785e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6471ce5f.css",
+    "static/js/main.0390c585.js"
+  ]
+}
