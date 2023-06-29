@@ -23,6 +23,10 @@ Page d'accueil
   width: 100%;
 }
 
+.image img {
+  width: 100%;
+}
+
 .imgBarre {
   background-color: #20596B;
   padding: 20px;
@@ -75,10 +79,33 @@ Page d'accueil
   color: #20596B;
 }
 
+@media (max-width: 1400px){
+  .titre-sur-image {
+    background-color: #FAFAF5;
+    padding: 10px;
+    left: 60%;
+    right: 20px;
+    bottom: 40%;
+  }
+  .titre-sur-image img {
+    width: 60%;
+  }
+
+  .titre-sur-image h3 {
+    font-size: 30px;
+  }
+}
+
 h1 {
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 20px;
 }
+
+/* h2 {
+  font-weight: 375;
+  font-size: 50px;
+  color: #20596B;
+} */
 
 h3 {
   /* font-family: 'Inter'; */
@@ -300,7 +327,7 @@ footer {
 
 
 /* Ligne droite blanche qui sert de separateur */
-hr {
+hr.gauche, hr.droite {
   
   height: 2px;
   
@@ -377,4 +404,125 @@ footer .col.gauche, footer .col.droite {
 .droite .mediasSociaux img {
   width: 20px;
   padding-left: 10px;
+}
+
+/***********************
+Page A propos
+***********************/
+.container.aPropos .about, .container.notreEquipe .equipe {
+  /* max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto; */
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.container.aPropos, .container.notreEquipe {
+  background-color: #FAFAF5;
+}
+/* Largeur du hr sur la page about */
+.about hr {
+  width: 220px
+}
+
+.equipe, .about{
+  padding-top: 29.05px;
+}
+
+/* Largeur du hr sur la page equipe */
+.notreEquipe hr {
+  width: 300px;
+  margin-left: 0px;
+}
+
+.container.physio {
+  background-color: #20596B;
+  color: white;
+}
+
+
+.about hr, .equipe hr {
+  
+  height: 3px;
+  
+  color: #20596B;
+  border: none;
+  background-color: #20596B;
+  margin-left: 0px;
+  margin-top: 0px;
+
+}
+
+.about img.image2 {
+  width: 600px;
+}
+
+.row h2, .row h2 {
+  font-family: 'Inter';
+  color: #20596B;
+  font-size: 35px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.aboutUsContainer {
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.aboutUsContainer p, .aboutUsContainer button {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+/**************
+Page equipe
+**************/
+/* .container.equipe {
+  background-color: #FAFAF5;
+} */
+
+.physio{
+  background-color: #20596B;
+  /* display: flex; */
+  padding: 20px;
+}
+.physio_equipe {
+  display: flex;
+}
+
+.masso_equipe {
+  display: flex;
+}
+
+.physio_equipe .col.extraInfo {
+  padding: 20px;
+  margin-right: 50px;
+  color: white;
+}
+
+.masso_equipe .col.extraInfo {
+  padding: 20px;
+  margin-right: 50px;
+  color: #20596B;
+}
+
+.masso_equipe .col.extraInfo button, .physio_equipe .col.extraInfo button {
+  margin-top: 20px;
+}
+
+h2.white {
+  color: white;
+}
+
+.masso {
+  background-color: #FAFAF5;
+  display: flex;
+  padding: 20px;
+}
+
+.physio .col.image img, .masso .col.image img {
+  width: 250px;
+  padding: 20px;
 }

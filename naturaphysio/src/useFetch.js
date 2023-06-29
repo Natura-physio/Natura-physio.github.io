@@ -8,20 +8,29 @@ const useFetch = (url) => {
 
     
     useEffect(() => {
-        fetch(url).then(res => {
+
+        const abortConstant = new AbortController();
+
+        fetch(url, {signal: abortConstant.signal }).then(res => {
             if (!res.ok) {
                 throw Error("Incapable d'extraire l'information pour cette ressource.")
             }
             return res.json();
         }).then(data => {
-            console.log(data);
             setData(data)
             setIsPending(false);
+            setError(null);
         }).catch(err => {
-            setIsPending(false);
-            setError(err.message);
-            
+            if (err.name === 'AbortError') {
+                console.log('fetch aborted');
+            } else {
+                setIsPending(false);
+                setError(err.message);
+            }            
         });
+
+        return () => abortConstant.abort();
+        
     }, [url]);
 
     return { data, isPending, error }

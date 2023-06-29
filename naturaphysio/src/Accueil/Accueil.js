@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
-
 import SectionPrincipale from "./SectionPrincipale";
 import Accomplissement from "./Accomplissement";
 import SectionInfoExtra from "./SectionInfoExtra";
 import ServicesAdapte from "./ServicesAdapte";
 import ListeServices from "../Service/ListeServices";
 import useFetch from "../useFetch";
-
+import { Container } from "react-bootstrap";
 const Accueil = () => {
     // Variables
     const handleClick = () => {
@@ -16,7 +14,8 @@ const Accueil = () => {
         console.log("hello " + name);
     }
 
-    const { data: services, isPending, error} = useFetch('http://localhost:8000/services');
+    // const { data: services, isPending, error} = useFetch('http://localhost:8000/services');
+    
     // const [services, setServices] = useState(null
     //     // [
     //     // {titre: 'Consultation', description: '', duree: '', id: 0},
@@ -57,13 +56,14 @@ const Accueil = () => {
             <SectionInfoExtra/>
             <ServicesAdapte/>
 
-            { error && <div>{error}</div>}
+            
+            {/* { error && <div>{error}</div>} */}
             {/* Liste services */}
-            { isPending && <div>Loading...</div>}
+            {/* { isPending && <div>Loading...</div>} */}
             {/* To do js in this template, need curly braces */}
-            {services && <ListeServices services={services} />}
-            {/* <button onClick={handleClick}>Click moi</button>
-            <button onClick={() => handleClickAgain('mario')}>Click me again</button> */}
+            {/* {services && <ListeServices services={services} />} */}
+            {/* <button onClick={handleClick}>Click moi</button> */}
+            {/* <button onClick={() => handleClickAgain('mario')}>Click me again</button> */}
         </div>
      );
 }
