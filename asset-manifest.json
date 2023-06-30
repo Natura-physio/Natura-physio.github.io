@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.0e4d0ebc.css",
-    "main.js": "/static/js/main.098486f8.js",
+    "main.css": "/static/css/main.5b3f0dff.css",
+    "main.js": "/static/js/main.c299c057.js",
     "static/js/787.0902785e.chunk.js": "/static/js/787.0902785e.chunk.js",
     "static/media/imagePrincipale.png": "/static/media/imagePrincipale.c5f016393222611f9e75.png",
     "static/media/about_image1.png": "/static/media/about_image1.29bf4ba767ac4f0276ad.png",
-    "static/media/contact.png": "/static/media/contact.90bcdac1c8e75495d461.png",
+    "static/media/contact.png": "/static/media/contact.e5e053d8c6d6025a1324.png",
     "static/media/about_image2.png": "/static/media/about_image2.d0b136401c86beafdb93.png",
     "static/media/marie.png": "/static/media/marie.81a7a88aff248c145a80.png",
     "static/media/image5.png": "/static/media/image5.b4b13987e896108bfb38.png",
@@ -14,12 +14,12 @@
     "static/media/logo.png": "/static/media/logo.2963006e244892580752.png",
     "static/media/natura_physio_noir.png": "/static/media/natura_physio_noir.2c094a2b660bd88aba34.png",
     "index.html": "/index.html",
-    "main.0e4d0ebc.css.map": "/static/css/main.0e4d0ebc.css.map",
-    "main.098486f8.js.map": "/static/js/main.098486f8.js.map",
+    "main.5b3f0dff.css.map": "/static/css/main.5b3f0dff.css.map",
+    "main.c299c057.js.map": "/static/js/main.c299c057.js.map",
     "787.0902785e.chunk.js.map": "/static/js/787.0902785e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e4d0ebc.css",
-    "static/js/main.098486f8.js"
+    "static/css/main.5b3f0dff.css",
+    "static/js/main.c299c057.js"
   ]
 }
