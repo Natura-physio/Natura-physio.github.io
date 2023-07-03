@@ -50,32 +50,35 @@ const BarreDeProgression = ({etat}) => {
     }
 
     return (
-        <div className="progressbar">
-            {/* <div className="progress" id="progress" style={{
-                width:`${progress}`
-            }}></div>
-            <div className="progress-step progress-step-active">1
-                <strong className="ProgressBar-stepLabel">Services</strong>
-            </div>
-            <div className="progress-step" data-title="Step 2: Information personnelle">2
-                <strong className="ProgressBar-stepLabel">Information personnelle</strong>
-            </div>
-            <div className="progress-step" data-title="Step 3: Confirmation">3
-                <strong className="ProgressBar-stepLabel">Confirmation</strong>
-            </div> */}
-            <div className="progress" id="progress" style={{
-                width:`${progress}`
-            }}></div>
-            <div className="progress-step progress-step-active">1
-                <strong className="ProgressBar-stepLabel">Services</strong>
-            </div>
-            <div className="progress-step" data-title="Step 2: Information personnelle">2
-                <strong className="ProgressBar-stepLabel">Information personnelle</strong>
-            </div>
-            <div className="progress-step" data-title="Step 3: Confirmation">3
-                <strong className="ProgressBar-stepLabel">Confirmation</strong>
+        <div className="barre">
+            <div className="progressbar">
+                {/* <div className="progress" id="progress" style={{
+                    width:`${progress}`
+                }}></div>
+                <div className="progress-step progress-step-active">1
+                    <strong className="ProgressBar-stepLabel">Services</strong>
+                </div>
+                <div className="progress-step" data-title="Step 2: Information personnelle">2
+                    <strong className="ProgressBar-stepLabel">Information personnelle</strong>
+                </div>
+                <div className="progress-step" data-title="Step 3: Confirmation">3
+                    <strong className="ProgressBar-stepLabel">Confirmation</strong>
+                </div> */}
+                <div className="progress" id="progress" style={{
+                    width:`${progress}`
+                }}></div>
+                <div className="progress-step progress-step-active">1
+                    <strong className="ProgressBar-stepLabel">Services</strong>
+                </div>
+                <div className="progress-step" data-title="Step 2: Information personnelle">2
+                    <strong className="ProgressBar-stepLabel">Information personnelle</strong>
+                </div>
+                <div className="progress-step" data-title="Step 3: Confirmation">3
+                    <strong className="ProgressBar-stepLabel">Confirmation</strong>
+                </div>
             </div>
         </div>
+        
     );
 }
 

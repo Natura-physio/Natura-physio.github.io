@@ -319,6 +319,11 @@ img.imgServices {
   width: 300px;
 }
 
+/* 
+.progressbar {
+  margin-right: auto;
+  margin-left: auto;
+} */
 .card-services {
   padding: 10px;
 }
@@ -780,7 +785,7 @@ textarea {
 
 /* Progressbar */
 .progressbar {
-  margin: 10 auto; /* donne un espace plus restreint */
+  margin: 10px auto; /* donne un espace plus restreint */
   padding: 2em 0 3em; /* pour la barre dans l'arriere plan */
   position: relative;
   display: flex;
@@ -966,6 +971,7 @@ Page de reservation
 .content {
   background-color: #FAFAF5;
   padding-bottom: 15px;
+  
 }
 
 .center {
