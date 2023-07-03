@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import React from "react";
 import { data_equipe_masso } from './masso_data';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Massotherapeutes = () => {
 
@@ -23,7 +24,8 @@ const Massotherapeutes = () => {
                         <Row>{key.profession}</Row>
                         <Row>{key.description}
                         </Row>
-                        <button className="btn">Prendre un rendez-vous avec {key.nom}</button>
+                        <Link to='/reservation'><button className="btn">Prendre un rendez-vous avec {key.nom}</button></Link>
+
                     </Col>
                     
                 </div>

@@ -1,13 +1,19 @@
 import { useEffect, useState } from "react";
-import { data } from "../Service/services_data";
+import { data } from "./services_data";
 import { Col, Container, Row } from "react-bootstrap";
-import ListeServices from "../Service/ListeServices";
-import Facets_container from "../Service/Facets_container";
+import ListeServices from "./ListeServices";
+import Facets_container from "./Facets_container";
 
 const Services = () => {
 
     const build_facet_values = (name) => {
         const values = [...new Set(data.map(item => item[name]))]
+        return values.map(value => ({'name': value, 'checked': false}));
+    }
+
+    const build_facet_values_array = (name) => {
+        const values = [...new Set(data.map(item => item[name]))];
+        // const values2 = [...new Set(values.map(value => value[name]))] .map((dataItem, idx) => dataItem[idx])
         return values.map(value => ({'name': value, 'checked': false}));
     }
 
@@ -65,16 +71,19 @@ const Services = () => {
     return ( 
         <div>
             <h2>About page</h2>
-            <Row>
-                <Col className="border-end" md={3}>
-                    <Facets_container facets={state.facets} miseAJourCategorie={miseAJourCategorie} effaceValeursFacet={effaceValeursFacet}/>
-                </Col>
-                <Col>            
-                    <Container className="d-flex flex-wrap">
-                        {state.shown_services.map(x => <ListeServices {...x}  key={x.id} />)}
-                    </Container>
-                </Col>
-            </Row>
+            <div className="servicesfferts">
+                {/* <Row> */}
+                    <Col className="border-end" md={3}>
+                        <Facets_container facets={state.facets} miseAJourCategorie={miseAJourCategorie} effaceValeursFacet={effaceValeursFacet}/>
+                    </Col>
+                    <Col>
+                        <Container className="d-flex flex-wrap">
+                            {state.shown_services.map(x => <ListeServices {...x}  key={x.id} />)}
+                        </Container>
+                    </Col>
+                {/* </Row> */}
+            </div>
+
 
         </div>
      );

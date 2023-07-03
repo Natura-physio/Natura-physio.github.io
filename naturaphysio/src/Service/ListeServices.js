@@ -1,6 +1,7 @@
 // const ListeServices = ({services}) => {
 
 import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 //     // const services = props.services;
 //     // console.log(props,services);
@@ -19,27 +20,43 @@ import { Button, Card, Col, Container, Row } from "react-bootstrap";
 //      );
 // }
 
-const ListeServices = ({id, name, description, duree}) => {
+const ListeServices = ({id, name, description, duree, image}) => {
 
     // const services = props.services;
     // console.log(props,services);
     return ( 
-        <Card className="m-2" style={{width: '18rem'}}>
-            <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card>
-                    <Row>
-                        <Col>Description:</Col>
-                        <Col>{description}</Col>
-                    </Row>
-                    <Row>
-                        <Col>Duree:</Col>
-                        <Col>{duree}</Col>
-                    </Row>
-                </Card>
-                <Container className="text-center">
+        <Card className="card-services">
+            <Card.Body className="card-body-services">
+                <div className="body-service">
+                    <Col><img className="imgServices" src={image} alt="" /></Col>
+
+                    <Col>
+                        <Card.Title>{name}</Card.Title>
+                        <Card>
+
+
+                            <Row>
+                                {/* <Col>Description:</Col> */}
+                                <Col>Description: <br/>{description}</Col>
+                            </Row>
+                            <Row>
+                                {/* <Col>Duree:</Col> */}
+                                <Col>Durée: {duree}</Col>
+                            </Row>
+                            <Row>
+                                <Link to='/reservation'>
+                                    <button className="btn">Réservez un rendez-vous</button>
+                                </Link>
+                            </Row>
+
+
+                        </Card>
+                    </Col>
+                </div>
+
+                {/* <Container className="text-center">
                     <Button variant="primary">BUY</Button>
-                </Container>
+                </Container> */}
             </Card.Body>
         </Card>
         // <div className="liste-services">

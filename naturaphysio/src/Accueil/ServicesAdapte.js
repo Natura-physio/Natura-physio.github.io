@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -26,7 +27,7 @@ const ServicesAdapte = () => {
                             <p>{typeService.body}</p>
                         </div>
                         <div className="typeServices-btn">
-                            <button className="btn">{typeService.bouton}</button>
+                        <Link to='/reservation'><button className="btn">{typeService.bouton}</button></Link>
                         </div>
                             
 

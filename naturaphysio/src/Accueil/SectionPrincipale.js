@@ -5,6 +5,7 @@ import icon_mail from "../images/mailWhite.png";
 import icon_phone from "../images/phoneWhite.png";
 import imagePrincipal from "../images/imagePrincipale.png";
 import titre from "../images/natura_physio_noir.png";
+import { Link } from "react-router-dom";
 
 const SectionPrincipale = () => {
     return ( 
@@ -15,7 +16,7 @@ const SectionPrincipale = () => {
                 <div className="titre-sur-image">
                     <img src={titre} alt="" />
                     <h3>La meilleure solution pour vos douleurs se trouve ici</h3>
-                    <button className="btn">Découvrir</button>
+                    <Link to='/about'><button className="btn">Découvrir</button></Link>
                 </div>
                 <div className="imgBarre">
                     <Container>

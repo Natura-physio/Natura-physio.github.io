@@ -312,6 +312,54 @@ le cote de la page */
   margin-right: 20px;
 }
 
+/*****************************
+Page de services
+*****************************/
+img.imgServices {
+  width: 300px;
+}
+
+.card-services {
+  padding: 10px;
+}
+
+.border-end.col-md-3 {
+  border: 1px solid #BDBDBD;
+  background-color: white;
+  width: 120px;
+  padding: 20px;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.card-body-services.card-body {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  margin: 8px;
+  /* cursor: pointer; */
+  padding: 6px;
+  width: 1000px;
+  text-align: center;
+}
+
+.body-service {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+.servicesfferts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
 /****************************
  Pied de page 
  ****************************/
@@ -409,7 +457,7 @@ footer .col.gauche, footer .col.droite {
 /***********************
 Page A propos
 ***********************/
-.container.aPropos .about, .container.notreEquipe .equipe {
+.container.aPropos .about, .container.notreEquipe .equipe, .faq-titre {
   /* max-width: 1400px;
   margin-left: auto;
   margin-right: auto; */
@@ -425,7 +473,7 @@ Page A propos
   width: 220px
 }
 
-.equipe, .about{
+.equipe, .about, .faq-titre{
   padding-top: 29.05px;
 }
 
@@ -441,7 +489,7 @@ Page A propos
 }
 
 
-.about hr, .equipe hr {
+.about hr, .equipe hr, .contact hr, .page1 hr, .page2 hr, .page3 hr, .faq hr {
   
   height: 3px;
   
@@ -453,6 +501,57 @@ Page A propos
 
 }
 
+.faq hr {
+  width: 120px;
+}
+
+.faq .aide {
+  display: flex;
+}
+
+.videoAboutUs {
+  width: 600px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid #858383;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-aide img {
+  width: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.msgAide {
+  background-color: white;
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.btn-aide {
+  width: 60px;
+  height: 60px;
+  background-color: #12718F;
+  border-radius: 50%;
+  border: 1px solid #20596B;
+}
+
+.faq_questions, .faq-questions {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.faq-questions {
+  max-width: 950px;
+  margin-left: 40px;
+}
+
+.page1 hr, .page2 hr, .page3 hr {
+  width: 290px;
+}
 .about img.image2 {
   width: 600px;
 }
@@ -525,4 +624,454 @@ h2.white {
 .physio .col.image img, .masso .col.image img {
   width: 250px;
   padding: 20px;
+}
+
+
+/****************
+Page contact
+****************/
+.container.contact {
+  display: flex;
+  background-color: #FAFAF5;
+}
+
+.container.contact .col {
+  /* width: 50%; */
+  /* width: 600px; */
+}
+
+.container.contact img {
+  width: 100%;
+  height: 100%;
+}
+
+.infoContact {
+  padding: 20px;
+}
+
+.contact hr {
+  width: 375px;
+}
+
+.infoContact .adresse img , .infoContact .courriel img, .infoContact .telephone img{
+  width: 20px;
+}
+
+.infoContact p {
+  color: #20596B;
+  padding-left: 10px;
+}
+
+.infoContact .adresse, .infoContact .courriel, .infoContact .telephone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-col {
+  padding: 40px;
+  padding-left: 60px;
+}
+
+.infoContact .ouvertures p {
+  padding: 0px;
+  margin: 2px;
+}
+
+.infoContact button {
+  margin-top: 10px;
+}
+
+.contactForm {
+  background-color: #20596B;
+  display: flex;
+  padding: 50px;
+  padding-right: 0px;
+}
+
+/* .formulaireContact {
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.col.formulaireContact h3 {
+  /* margin-left: 50px; */
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  font-size: 35px;
+}
+.col.formulaireContact h4 {
+  /* margin-left: 50px; */
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.contactForm .col {
+  vertical-align: bottom;
+  /* display: flex; */
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* iframe {
+  justify-content:center;
+} */
+/* form .row.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 5px;
+} */
+
+/* form .row.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 5px;
+} */
+form .center.row {
+  /* display: flex; */
+  /* padding: 10px; */
+}
+
+form .left.row {
+  /* padding: 10px; */
+}
+
+
+.form-control {
+  width: 300px;
+  padding: 10px;
+  margin: 8px;
+  text-align: left;
+  border-radius: 5px;
+  border: 1px solid #808080;
+}
+
+.form-control .center {
+  margin-left: 10px;
+}
+
+textarea {
+  /* width: 100%; */
+  resize: vertical;
+}
+
+.formulaire_contact {
+  /* margin-left: auto;
+  margin-right: auto; */
+  text-align: center;
+}
+
+.formulaireContact.col {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Progressbar */
+.progressbar {
+  margin: 10 auto; /* donne un espace plus restreint */
+  padding: 2em 0 3em; /* pour la barre dans l'arriere plan */
+  position: relative;
+  display: flex;
+  justify-content: space-between; /* donne de l'espace */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Barre de progression */
+.progressbar::before, .progress {
+  content: "";
+  height: 5px;
+  position: absolute;
+  top: 60px; /* emplacement de la barre sur axe des y */
+  width: 100%;
+
+  /* couleur de la barre en arriere plan */
+  background-color: #D9D9D9;
+}
+
+/* Couleur de l'etape dans la barre de progression */
+.progress-step.progress-step-active {
+  background-color: #20596B;
+  color: white;
+}
+
+/* Barre de progres lorsque etape completee */
+.progress {
+  background-color: #20596B;
+  width: 0%;
+}
+
+.progress-step {
+  width: 60px;
+  height: 60px;
+  background-color: #ceced1;
+  color:#858383;
+  border-radius: 50%; /* forme un cercle */
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: all .25s ease-out; /* fade-in/fade-out */
+}
+
+
+/* Labels des etapes de la barre de progression */
+.ProgressBar-stepLabel {
+  text-align: center;
+  display: block;
+  color: #858383;
+  font-family: var(--bs-body-font-family);
+  font-weight: 450;
+  position: absolute;
+  padding-top: 100px;
+  width: 25%;
+  transition: all .25s ease-out;
+}
+
+/*******************
+Page de reservation
+*******************/
+.page1, .page2, .page3 {
+  background-color: #FAFAF5;
+  padding: 40px;
+  padding-top: 29.05px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reserveBtn {
+  display: flex;
+  justify-content: center;
+}
+
+
+.reservation-services, .reservation-infoPersonnelle, .reservation-confirmation {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+.reservation-services .titre-reservation-services, .reservation-infoPersonnelle, .titre-reservation-infoPersonnelle, .titre-reservation-confirmation {
+  text-align: center;
+  color: #20596B;
+}
+
+.annulationRdv {
+  background-color: #FAFAF5;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.annulationRdv h2 {
+  margin-top: 0px;
+}
+
+.reservation-services .selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.reservation-services .selection .form-select, .react-datepicker__input-container input {
+  width: 300px;
+  padding: 10px;
+  margin: 8px;
+  text-align: left;
+  border-radius: 5px;
+  /* border: ; */
+}
+
+.react-datepicker__input-container input {
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid #808080;
+}
+
+.btnAnnulation {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.date-time {
+  color: #20596B;
+  /* text-align: center; */
+}
+
+.date-time p {
+  margin-bottom: 5px;
+  margin-left: 8px;
+  /* text-align: center; */
+}
+
+.date-time p.textDate {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.details-reservation-confirmation h2 {
+  color: #20596B;
+  margin-bottom: 2px;
+}
+
+/* .date-time input {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.slots {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-title.h5, .card-body {
+  /* padding: 5px; */
+  background-color: white;
+  font-size: 25px;
+  color: #20596B;
+  margin-left: 5px;
+}
+
+.card-body-services .col {
+  color: black;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+}
+
+
+.card-body p {
+  margin: 0px;
+}
+
+.test {
+  margin: 10px;
+}
+
+.content {
+  background-color: #FAFAF5;
+  padding-bottom: 15px;
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.reservation-services .center {
+  text-align: center;
+}
+
+
+.card-body {
+  border: 1px solid #BDBDBD;
+  margin: 8px;
+  /* cursor: pointer; */
+  padding: 6px;
+  width: 80px;
+  text-align: center;
+
+  background-color: white;
+    /* padding: 20px 40px; */
+  box-shadow: 1px 2px 2px #6a6a6a70;
+    /* border-radius: 5px; */
+    /* text-align: left; */
+}
+
+.card-body:hover {
+  border: 1px solid #20596B;
+}
+
+.reservation-infoPersonnelle .form-label, .reservation-infoPersonnelle .form-check {
+  color: black;
+}
+
+.form-info {
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.reservation-infoPersonnelle .form-label, .reservation-infoPersonnelle .form-check {
+  margin-left: 8px;
+}
+
+.form-adresse {
+  display: flex;
+}
+
+.form-nouveauPatient h2 {
+  margin-left: 8px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+}
+
+.form-nouveauPatient p {
+  margin-top: 2px;
+  margin-left: 8px;
+}
+
+.form-nouveauPatient {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.form-nouvPatient-questions {
+  margin-top: 10px;
+}
+
+/* .card-body:active, .card-body:focus, .select.card-body {
+  background-color: #12718F;
+  color: #fff;
+} */
+
+/* .card-body:active:visited{
+  background-color: green;
+  color: #fff;
+} */
+
+.mainStepper {
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stepper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #0b7c9f;
+}
+
+.barreNavig {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: #808080;
+
 }

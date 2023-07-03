@@ -6,6 +6,7 @@ import { useState } from "react";
 import marie  from '../images/equipe/marie.png';
 import john  from '../images/equipe/john.png';
 import sylvie  from '../images/equipe/sylvie.png';
+import { Link } from "react-router-dom";
 
 const Physiotherapeutes = () => {
 
@@ -25,7 +26,8 @@ const Physiotherapeutes = () => {
                         <Row>{key.profession}</Row>
                         <Row>{key.description}
                         </Row>
-                        <button className="btn white">Prendre un rendez-vous avec {key.nom}</button>
+                        <Link to='/reservation'><button className="btn white">Prendre un rendez-vous avec {key.nom}</button></Link>
+
                     </Col>
                     
                 </div>

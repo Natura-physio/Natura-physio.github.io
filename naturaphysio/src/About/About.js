@@ -32,6 +32,10 @@ const About = () => {
                         <button className='btn'>Réservez un rendez-vous</button>
                     </Col>
                 </div>
+
+                <div className='videoAboutUs'>
+                    <div className="video">**VIDÉO À venir dans la version finale</div>
+                </div>
                 
             </div>
             

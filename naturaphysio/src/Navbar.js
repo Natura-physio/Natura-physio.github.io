@@ -14,20 +14,25 @@ function BarreNavigation () {
         //     <div className="p-2 ms-auto">Second item</div>
         //     <div className="p-2">Third item</div>
         // </Stack>
-        <Navbar expand="md" className="bg-body-tertiary">
-            <Navbar.Brand href="#home"><img src={logo} alt='' /></Navbar.Brand>
+        <Navbar expand="md">
+            <Navbar.Brand><Link to="/"><img src={logo} alt='' /></Link></Navbar.Brand>
 
             <div className="navLinks">
                 <Nav className="me-auto">                    
-                        <Link to="/" style={{
-                            color: "black"
-                        }}>ACCUEIL</Link>
+                        <Link to="/">ACCUEIL</Link>
                         <Link to="/about">À PROPOS</Link>
-                        <Link to='/'>SERVICES</Link>
+                        <Link to='/service'>SERVICES</Link>
                         <Link to='/equipe'>ÉQUIPE</Link>
-                        <Link to='/'>CONTACT</Link>
-                        <Link to='/'>PRENDRE UN RENDEZ-VOUS</Link>
-                        <Link to='/'>EN</Link>
+                        <Link to='/contact'>CONTACT</Link>
+                        <Link to='/review'>REVUES</Link>
+                        <Link to='/reservation'>PRENDRE UN RENDEZ-VOUS</Link>
+                        {/* <Link to='/reservationPage1'>PRENDRE UN RENDEZ-VOUS</Link> */}
+                        <Link to='/aide'>FAQ</Link>
+                        {/* <NavDropdown title="AIDE" id="navbarScrollingDropdown">
+                            <NavDropdown.Item><Link to='/aide'>FAQ</Link></NavDropdown.Item>
+                        </NavDropdown> */}
+
+                        {/* <Link to='/'>EN</Link> */}
                         {/* <Nav.Link href='/'>EN</Nav.Link> */}
                 </Nav>
             </div>

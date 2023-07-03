@@ -8,9 +8,9 @@ function Facet({name, values, miseAJourCategorie}) {
             <Row>
                 <Col>{name}</Col>
             </Row>
-            {values.map(value => (
-                <Row key={value}>
-                    <Valeur_Facet name={value.name} miseAJourCategorie={miseAJourCategorie} facet={name}/>
+            {Object.entries(values).map(([value, idx]) => (
+                <Row key={idx}>
+                    <Valeur_Facet  name={value.name} miseAJourCategorie={miseAJourCategorie} facet={name}/>
                 </Row>
             ))}
         </>

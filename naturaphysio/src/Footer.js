@@ -42,11 +42,11 @@ const Footer = () => {
             </Col>
 
             <Col className="centre">
-                <a href="/">À Propos</a>
+                <a href="/about">À Propos</a>
                 <a href="/">Nos services</a>
-                <a href="/">Notre équipe</a>
-                <a href="/">Contactez-nous</a>
-                <a href="/">Prendre un rendez-vous </a>                       
+                <a href="/equipe">Notre équipe</a>
+                <a href="/contact">Contactez-nous</a>
+                <a href="/reservation">Prendre un rendez-vous </a>
             </Col>
 
             <Col className="droite">
