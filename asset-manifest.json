@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.b676cdc2.css",
-    "main.js": "/static/js/main.ce1e3e92.js",
+    "main.css": "/static/css/main.d958cdac.css",
+    "main.js": "/static/js/main.2f1376f9.js",
     "static/js/787.0902785e.chunk.js": "/static/js/787.0902785e.chunk.js",
     "static/media/imagePrincipale.png": "/static/media/imagePrincipale.c5f016393222611f9e75.png",
     "static/media/about_image1.png": "/static/media/about_image1.29bf4ba767ac4f0276ad.png",
@@ -20,12 +20,12 @@
     "static/media/logo.png": "/static/media/logo.2963006e244892580752.png",
     "static/media/natura_physio_noir.png": "/static/media/natura_physio_noir.2c094a2b660bd88aba34.png",
     "index.html": "/index.html",
-    "main.b676cdc2.css.map": "/static/css/main.b676cdc2.css.map",
-    "main.ce1e3e92.js.map": "/static/js/main.ce1e3e92.js.map",
+    "main.d958cdac.css.map": "/static/css/main.d958cdac.css.map",
+    "main.2f1376f9.js.map": "/static/js/main.2f1376f9.js.map",
     "787.0902785e.chunk.js.map": "/static/js/787.0902785e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b676cdc2.css",
-    "static/js/main.ce1e3e92.js"
+    "static/css/main.d958cdac.css",
+    "static/js/main.2f1376f9.js"
   ]
 }
